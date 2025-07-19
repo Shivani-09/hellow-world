@@ -1,0 +1,194 @@
+Last login: Sat Jul 19 07:43:33 on console
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+rajashekars-MacBook-Pro:~ rajashekarsurakanti$ ls
+Applications		Movies			eclipse-workspace
+Desktop			Music			git
+Documents		Pictures		my-react-app
+Downloads		Postman
+Library			Public
+rajashekars-MacBook-Pro:~ rajashekarsurakanti$ cd eclipse-workspace/
+rajashekars-MacBook-Pro:eclipse-workspace rajashekarsurakanti$ ls
+CreatingObjectFromClass	costructors		jj
+Inheritance		datatype		jjj
+Java-practice		datatypes		methodOverloadinng
+JavaProject		dateTime		methodOverridingDog
+LinkedList		fibonacciSeries		polymorphism
+List			hello_world		recursive
+MethodOverriding	importFromGit		test
+Python			importProcess
+abstraction		j
+rajashekars-MacBook-Pro:eclipse-workspace rajashekarsurakanti$ cd hello_world/
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ ls
+bin	src
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git innit
+git: 'innit' is not a git command. See 'git --help'.
+
+The most similar command is
+	init
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git init
+Initialized empty Git repository in /Users/rajashekarsurakanti/eclipse-workspace/hello_world/.git/
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git checkout -b main
+Switched to a new branch 'main'
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git checkout linkedlist
+error: pathspec 'linkedlist' did not match any file(s) known to git
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git checkout -b linkedlist
+Switched to a new branch 'linkedlist'
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$  git branch
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$  git status
+On branch linkedlist
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.classpath
+	.project
+	.settings/
+	bin/
+	src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git branches
+git: 'branches' is not a git command. See 'git --help'.
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git branche
+git: 'branche' is not a git command. See 'git --help'.
+
+The most similar command is
+	branch
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git branch
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ nano readme.md
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git status
+On branch linkedlist
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.classpath
+	.project
+	.settings/
+	bin/
+	readme.md
+	src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git add bin/ readme.md src/
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git commit -m "test"
+[linkedlist (root-commit) ea4ebcf] test
+ 3 files changed, 9 insertions(+)
+ create mode 100644 bin/module-info.class
+ create mode 100644 readme.md
+ create mode 100644 src/module-info.java
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git push origin linkedlist
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git remote add origin https://github.com/Shivani-09/hellow-world.git
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git push origin linkedlist
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 551 bytes | 275.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Shivani-09/hellow-world.git
+ * [new branch]      linkedlist -> linkedlist
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git checkout -b main
+Switched to a new branch 'main'
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/Shivani-09/hellow-world/pull/new/main
+remote: 
+To https://github.com/Shivani-09/hellow-world.git
+ * [new branch]      main -> main
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git checkout linkedlist
+Switched to branch 'linkedlist'
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ nano readme.md 
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git status
+On branch linkedlist
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.classpath
+	.project
+	.settings/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git add readme.md 
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git status
+On branch linkedlist
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.classpath
+	.project
+	.settings/
+
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git commit -m "test 2"
+[linkedlist bc9f239] test 2
+ 1 file changed, 1 insertion(+)
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git push origin linkedlist
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Shivani-09/hellow-world.git
+   ea4ebcf..bc9f239  linkedlist -> linkedlist
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ cd..
+-bash: cd..: command not found
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ cd Desktop
+-bash: cd: Desktop: No such file or directory
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ ls
+bin		readme.md	src
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ cd -
+/Users/rajashekarsurakanti/eclipse-workspace
+rajashekars-MacBook-Pro:eclipse-workspace rajashekarsurakanti$ ls
+CreatingObjectFromClass	costructors		jj
+Inheritance		datatype		jjj
+Java-practice		datatypes		methodOverloadinng
+JavaProject		dateTime		methodOverridingDog
+LinkedList		fibonacciSeries		polymorphism
+List			hello_world		recursive
+MethodOverriding	importFromGit		test
+rajashekars-MacBook-Pro:eclipse-workspace rajashekarsurakanti$ 
+rajashekars-MacBook-Pro:eclipse-workspace rajashekarsurakanti$ git status
+fatal: not a git repository (or any of the parent directories): .git
+rajashekars-MacBook-Pro:eclipse-workspace rajashekarsurakanti$ ls
+CreatingObjectFromClass	List			datatype		importFromGit		methodOverloadinng
+Inheritance		MethodOverriding	datatypes		importProcess		methodOverridingDog
+Java-practice		Python			dateTime		j			polymorphism
+JavaProject		abstraction		fibonacciSeries		jj			recursive
+LinkedList		costructors		hello_world		jjj			test
+rajashekars-MacBook-Pro:eclipse-workspace rajashekarsurakanti$ cd hello_world/
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ ls
+bin		readme.md	src
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ git status
+On branch linkedlist
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.classpath
+	.project
+	.settings/
+
+nothing added to commit but untracked files present (use "git add" to track)
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ nano gitcommands.txt
+rajashekars-MacBook-Pro:hello_world rajashekarsurakanti$ 
+
